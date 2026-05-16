@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Almitas Opportunity Fund</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    .delay-100 {
+      animation-delay: 0.1s;
+    }
+    .delay-200 {
+      animation-delay: 0.2s;
+    }
+    .delay-300 {
+      animation-delay: 0.3s;
+    }
+    .delay-400 {
+      animation-delay: 0.4s;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%);
+    }
+    .performance-card {
+      transition: all 0.3s ease;
+    }
+    .performance-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    .nav-link {
+      position: relative;
+    }
+    .nav-link:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #1e40af;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover:after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <div class="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center mr-3">
+          <i class="fas fa-chart-line text-white text-lg"></i>
+        </div>
+        <span class="text-xl font-bold text-blue-900">ALMITAS FUND</span>
+      </div>
+      
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="nav-link text-gray-700 hover:text-blue-900 font-medium">Q1 2025 INVESTOR LETTER</a>
+        <a href="#" class="nav-link text-gray-700 hover:text-blue-900 font-medium">PRESENTATION</a>
+        <a href="#" class="nav-link text-gray-700 hover:text-blue-900 font-medium">FACT SHEET</a>
+        <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">Contact Us</a>
+      </nav>
+      
+      <button class="md:hidden text-gray-700">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="gradient-bg py-20 md:py-28">
+    <div class="container mx-auto px-4 text-center">
+      <div class="max-w-4xl mx-auto">
+        <div class="animate-fade-in">
+          <span class="inline-block bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-medium mb-4">INVESTMENT OPPORTUNITIES</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6 animate-fade-in delay-100">ALMITAS OPPORTUNITY FUND</h1>
+        <h2 class="text-xl md:text-2xl text-gray-700 mb-8 animate-fade-in delay-200">Focused Strategies. Strong Returns.</h2>
+        <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto animate-fade-in delay-300">Delivering consistent performance through opportunistic investing with a disciplined approach to risk management.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in delay-400">
+          <a href="#" class="bg-blue-900 hover:bg-blue-800 text-white font-medium py-3 px-8 rounded-md transition transform hover:-translate-y-1 shadow-lg">
+            View Q1 2025 Investor Letter
+          </a>
+          <a href="#" class="border-2 border-blue-900 text-blue-900 font-medium py-3 px-8 rounded-md transition transform hover:-translate-y-1 hover:bg-blue-50">
+            Download Presentation <i class="fas fa-download ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Q1 2025 Performance</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Performance Card 1 -->
+        <div class="performance-card bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-900">
+          <div class="text-gray-500 mb-2">S&P 500</div>
+          <div class="text-3xl font-bold text-red-500 mb-2">-4.3%</div>
+          <div class="text-sm text-gray-500">1 Year Return</div>
+        </div>
+        
+        <!-- Performance Card 2 -->
+        <div class="performance-card bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500">
+          <div class="text-gray-500 mb-2">Bloomberg Barclays Aggregate</div>
+          <div class="text-3xl font-bold text-green-500 mb-2">+2.8%</div>
+          <div class="text-sm text-gray-500">1 Year Return</div>
+        </div>
+        
+        <!-- Performance Card 3 -->
+        <div class="performance-card bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500">
+          <div class="text-gray-500 mb-2">HFRI Hedge Fund Composite</div>
+          <div class="text-3xl font-bold text-red-500 mb-2">-0.4%</div>
+          <div class="text-sm text-gray-500">1 Year Return</div>
+        </div>
+        
+        <!-- Performance Card 4 -->
+        <div class="performance-card bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500">
+          <div class="text-gray-500 mb-2">TCD Fund Q1 2025</div>
+          <div class="text-3xl font-bold text-green-500 mb-2">+0.7%</div>
+          <div class="text-sm text-gray-500">1 Year Return</div>
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center">
+        <p class="text-gray-600 mb-6">* Past performance is not indicative of future results.</p>
+        <a href="#" class="inline-flex items-center text-blue-900 font-medium hover:text-blue-700">
+          View Full Performance Details
+          <i class="fas fa-chevron-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-12 items-center">
+          <div class="md:w-1/2">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                 alt="Investment Strategy" 
+                 class="rounded-xl shadow-lg w-full h-auto object-cover">
+          </div>
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold text-blue-900 mb-6">Who We Are</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Almitas Capital is an investment firm focused on opportunistic, value-driven strategies across global markets. 
+              Our team combines decades of experience with innovative approaches to uncover unique investment opportunities.
+            </p>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+              We aim to preserve capital while generating attractive risk-adjusted returns through disciplined portfolio 
+              construction and rigorous fundamental analysis.
+            </p>
+            
+            <div class="mb-8">
+              <label for="letters" class="block text-gray-700 font-medium mb-2">Previous Investor Letters:</label>
+              <div class="relative">
+                <select id="letters" class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded-md leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                  <option>2024 Q1</option>
+                  <option>2024 Q2</option>
+                  <option>2024 Q3</option>
+                  <option>2024 Q4</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+            
+            <a href="#" class="inline-flex items-center text-blue-900 font-medium hover:text-blue-700">
+              Learn More About Our Approach
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investment Strategy -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-900 mb-4">Our Investment Strategy</h2>
+      <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">A disciplined approach to generating alpha across market cycles</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Strategy 1 -->
+        <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+            <i class="fas fa-search-dollar text-blue-900 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-3">Fundamental Research</h3>
+          <p class="text-gray-600">
+            Deep dive analysis of companies, industries and macroeconomic trends to identify mispriced assets.
+          </p>
+        </div>
+        
+        <!-- Strategy 2 -->
+        <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+            <i class="fas fa-balance-scale text-blue-900 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-3">Risk Management</h3>
+          <p class="text-gray-600">
+            Comprehensive risk framework with position sizing, stop-losses and portfolio stress testing.
+          </p>
+        </div>
+        
+        <!-- Strategy 3 -->
+        <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+            <i class="fas fa-chart-pie text-blue-900 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-3">Portfolio Construction</h3>
+          <p class="text-gray-600">
+            Optimal asset allocation with uncorrelated return streams to maximize risk-adjusted returns.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-blue-900 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Invest with Almitas?</h2>
+      <p class="text-blue-100 max-w-2xl mx-auto mb-8">
+        Join our growing community of investors who trust us to navigate complex markets and deliver consistent returns.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#" class="bg-white hover:bg-gray-100 text-blue-900 font-medium py-3 px-8 rounded-md transition transform hover:-translate-y-1 shadow-lg">
+          Schedule a Consultation
+        </a>
+        <a href="#" class="border-2 border-white text-white font-medium py-3 px-8 rounded-md transition transform hover:-translate-y-1 hover:bg-blue-800">
+          Download Investor Kit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Column 1 -->
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center mr-3">
+              <i class="fas fa-chart-line text-white text-lg"></i>
+            </div>
+            <span class="text-xl font-bold text-white">ALMITAS FUND</span>
+          </div>
+          <p class="mb-4">
+            Delivering consistent performance through opportunistic investing with a disciplined approach to risk management.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-linkedin-in text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-twitter text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Column 2 -->
+        <div>
+          <h4 class="text-white font-semibold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition">About Us</a></li>
+            <li><a href="#" class="hover:text-white transition">Investment Strategy</a></li>
+            <li><a href="#" class="hover:text-white transition">Investor Resources</a></li>
+            <li><a href="#" class="hover:text-white transition">Performance</a></li>
+            <li><a href="#" class="hover:text-white transition">Team</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3 -->
+        <div>
+          <h4 class="text-white font-semibold text-lg mb-4">Documents</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition">Investor Letters</a></li>
+            <li><a href="#" class="hover:text-white transition">Presentations</a></li>
+            <li><a href="#" class="hover:text-white transition">Fact Sheets</a></li>
+            <li><a href="#" class="hover:text-white transition">Whitepapers</a></li>
+            <li><a href="#" class="hover:text-white transition">Disclosures</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 4 -->
+        <div>
+          <h4 class="text-white font-semibold text-lg mb-4">Contact Details</h4>
+          <address class="not-italic">
+            <p class="mb-2">Almitas Capital Management</p>
+            <p class="mb-2">123 Investment Avenue</p>
+            <p class="mb-2">New York, NY 10001</p>
+            <p class="mb-4">United States</p>
+            <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> (123) 456-8890</p>
+            <p class="mb-2"><i class="fas fa-envelope mr-2"></i> info@almitascapital.com</p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+        <p>© 2025 Almitas Capital Management. All rights reserved.</p>
+        <p class="mt-2">
+          <a href="#" class="hover:text-white transition">Privacy Policy</a> | 
+          <a href="#" class="hover:text-white transition">Terms of Service</a> | 
+          <a href="#" class="hover:text-white transition">Disclosures</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple animation observer
+    document.addEventListener('DOMContentLoaded', function() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      document.querySelectorAll('.performance-card, .about img, section').forEach(section => {
+        observer.observe(section);
+      });
+      
+      // Mobile menu toggle would go here
+    });
+  </script>
+</body>
+</html>
